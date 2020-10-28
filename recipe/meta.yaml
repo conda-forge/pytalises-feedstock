@@ -11,6 +11,7 @@ source:
   sha256: faa08e778bf498d1921c0a392c81aee6979a7477d41eccb22edab023feeb6df0
 build:
   number: 1
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -21,10 +22,10 @@ requirements:
     - llvmlite
     - numba >=0.50
     - numexpr
-    - numpy >= 1.17
+    - numpy >=1.17
     - pyfftw
     - python >=3.6
-    - scipy >= 1.5
+    - scipy >=1.5
 
 test:
   imports:
