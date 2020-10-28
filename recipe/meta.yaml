@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytalises-{{ version }}.tar.gz
-  sha256: faa08e778bf498d1921c0a392c81aee6979a7477d41eccb22edab023feeb6df0
+  sha256: 913f600f5073f4ee624935ad69afbe7a1471078e718f721872116e4c7420b860
+
 build:
   number: 1
-  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
