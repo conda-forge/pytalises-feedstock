@@ -1,5 +1,5 @@
 {% set name = "pytalises" %}
-{% set version = "0.1.7" %}
+{% set version = "0.1.8" %}
 
 
 package:
@@ -8,30 +8,27 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytalises-{{ version }}.tar.gz
-  sha256: 913f600f5073f4ee624935ad69afbe7a1471078e718f721872116e4c7420b860
+  sha256: 224bfc1547c2e781e30ce37825f78e14163f07949bc30d43c76292829e34bd9d
 
 build:
-  number: 1
+  number: 0
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
     - python >=3.6
-    - llvmlite >=0.34
     - numba >=0.50
-    - numexpr
-    - numpy >=1.17
-    - pyfftw
-    - python >=3.6
+    - numexpr >=2.7
+    - numpy >=1.19
+    - pyfftw >=0.12
     - scipy >=1.5
   run:
-    - llvmlite >=0.34
     - numba >=0.50
-    - numexpr
-    - numpy >=1.17
-    - pyfftw
-    - python >=3.6
+    - numexpr >=2.7
+    - numpy >=1.19
+    - pyfftw >=0.12
     - scipy >=1.5
 
 test:
