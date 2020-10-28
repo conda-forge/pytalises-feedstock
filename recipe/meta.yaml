@@ -18,8 +18,15 @@ requirements:
   host:
     - pip
     - python >=3.6
+    - llvmlite >=0.34
+    - numba >=0.50
+    - numexpr
+    - numpy >=1.17
+    - pyfftw
+    - python >=3.6
+    - scipy >=1.5
   run:
-    - llvmlite
+    - llvmlite >=0.34
     - numba >=0.50
     - numexpr
     - numpy >=1.17
