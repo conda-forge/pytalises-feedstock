@@ -10,8 +10,7 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytalises-{{ version }}.tar.gz
   sha256: faa08e778bf498d1921c0a392c81aee6979a7477d41eccb22edab023feeb6df0
 build:
-  number: 0
-  noarch: python
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -22,10 +21,10 @@ requirements:
     - llvmlite
     - numba >=0.50
     - numexpr
-    - numpy
+    - numpy >= 1.17
     - pyfftw
     - python >=3.6
-    - scipy
+    - scipy >= 1.5
 
 test:
   imports:
