@@ -11,22 +11,16 @@
       sha256: 224bfc1547c2e781e30ce37825f78e14163f07949bc30d43c76292829e34bd9d
     
     build:
-      number: 1
+      noarch: python
+      number: 2
       script: {{ PYTHON }} -m pip install . -vv
     
     requirements:
       host:
         - pip
-        - python
-        - llvmlite >=0.34
-        - numba >=0.50
-        - numexpr >=2.7
-        - numpy >=1.19
-        - pyfftw >=0.12
-        - scipy >=1.5
+        - python >=3.6,<3.9
       run:
-        - pip
-        - python
+        - python >=3.6,<3.9
         - llvmlite >=0.34
         - numba >=0.50
         - numexpr >=2.7
