@@ -18,7 +18,15 @@
       host:
         - pip
         - python
+        - llvmlite >=0.34
+        - numba >=0.50
+        - numexpr >=2.7
+        - numpy >=1.19
+        - pyfftw >=0.12
+        - scipy >=1.5
       run:
+        - pip
+        - python
         - llvmlite >=0.34
         - numba >=0.50
         - numexpr >=2.7
