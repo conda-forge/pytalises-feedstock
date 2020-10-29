@@ -12,13 +12,12 @@
     
     build:
       number: 1
-      noarch: python
       script: {{ PYTHON }} -m pip install . -vv
     
     requirements:
       host:
         - pip
-        - python >=3.6
+        - python
       run:
         - llvmlite >=0.34
         - numba >=0.50
