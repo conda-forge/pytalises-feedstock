@@ -1,5 +1,5 @@
     {% set name = "pytalises" %}
-    {% set version = "0.1.8" %}
+    {% set version = "0.2.0" %}
     
     
     package:
@@ -8,11 +8,11 @@
     
     source:
       url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytalises-{{ version }}.tar.gz
-      sha256: 224bfc1547c2e781e30ce37825f78e14163f07949bc30d43c76292829e34bd9d
+      sha256: 47d7dfff753951aa2e6ff0068bb488ce2caae1c643104e616c3b955824892b32
     
     build:
       noarch: python
-      number: 2
+      number: 0
       script: {{ PYTHON }} -m pip install . -vv
     
     requirements:
