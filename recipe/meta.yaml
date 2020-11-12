@@ -1,7 +1,6 @@
 {% set name = "pytalises" %}
 {% set version = "0.2.2" %}
-    {% set name = "pytalises" %}
-    {% set version = "0.2.0" %}
+
 package:
   name: {{ name|lower }}
   version: {{ version }}
