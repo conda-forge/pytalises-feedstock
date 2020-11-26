@@ -11,15 +11,15 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6,<3.9
+    - python >=3.6
   run:
-    - python >=3.6,<3.9
+    - python >=3.6
     - llvmlite >=0.34
     - numba >=0.50
     - numexpr >=2.7
