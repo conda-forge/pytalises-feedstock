@@ -13,18 +13,6 @@ build:
   number: 3
   script: {{ PYTHON }} -m pip install . -vv
 
-osx:
-  enabled: True
-osx:
-  enabled: True
-win:
-  enabled: True
-
-provider:
-  linux: azure
-  osx: azure
-  win: azure
-
 requirements:
   host:
     - pip
