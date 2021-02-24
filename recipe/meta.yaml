@@ -13,6 +13,11 @@ build:
   number: 3
   script: {{ PYTHON }} -m pip install . -vv
 
+provider:
+  linux: azure
+  osx: azure
+  win: azure
+
 requirements:
   host:
     - pip
